@@ -1,0 +1,11 @@
+.nav-sticky{
+    position: fixed;
+    background-color: #454545fa;
+    .logo{
+        position: relative;
+        transform: translateY(5%);
+
+        width: 5rem;
+        height: 5rem;
+    }
+}

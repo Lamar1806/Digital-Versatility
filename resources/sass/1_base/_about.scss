@@ -1,0 +1,47 @@
+.about{
+    background: #f0f0f0;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    .row{
+        margin-top: 3rem;
+    }
+    .section-header{
+        margin-bottom: 3rem;
+    }
+    &-text-container{
+        @include grid-column(6);
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    &-text{
+        position: relative;
+    }    
+    &-image-container{
+        @include grid-column(6);
+        text-align: center;
+    }
+    &-image{
+        display: inline-block;
+        border-radius: 10%;
+        width: 30rem;
+        margin: 0 auto;
+    }
+    &-image-description{
+        font-size: 2rem;
+    }
+    .quote{
+        font-size: 2rem;
+    }
+    .first-word{
+        display: inline-block;
+        margin-left: 3rem;
+    }
+    &-text{
+        text-align: left;
+        font-size: 2rem;
+        font-weight: 500;
+        letter-spacing: 1.3px;
+        word-spacing: 1.5px;
+        line-height: 2.8rem;
+    }
+}

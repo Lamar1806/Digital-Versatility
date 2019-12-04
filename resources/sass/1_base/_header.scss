@@ -1,0 +1,49 @@
+.header{
+    background-image: linear-gradient(to right bottom, rgba($black, 0.7), rgba($black, 0.7)), 
+                    url("../img/header-bg-min.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 95vh;  
+    .row{
+        text-align: center;
+    }
+
+}
+.header-content{
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h1, .header-h1{
+    font-size: 6rem ;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+.header-h2{
+    display: block;
+    font-size: 5rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+.header-btn{
+    color: white;
+    display: inline-block;
+    font-size: 2rem;
+    margin-top: 6rem;
+    text-decoration: none;
+}
+.header-icon{
+    position: absolute;
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 100px;
+    bottom: 3rem;
+    color: white;
+}

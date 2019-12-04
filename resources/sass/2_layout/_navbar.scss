@@ -1,0 +1,61 @@
+.nav-container{
+    position: absolute;
+    width: 100vw;
+    z-index: 10;
+    //transition: all .25s ease-in-out;
+}
+.nav{
+    position: relative;
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 0rem 3rem;    
+    ul, li{
+        display: inline-block;
+    }         
+    .logo{    
+        width: 8rem;
+        height: 8rem;
+    }   
+    &-call{
+        color: $orange;
+    } 
+    .links{
+        position: absolute;
+        right: 3rem; 
+        text-transform: uppercase;
+        top: 50%;
+        transform: translateY(-50%);
+        & li:not(:last-child){
+            margin-right: 1.5rem;
+        }
+        li{
+            position: relative;     
+            letter-spacing: 1.5px;
+            font-weight: 300;
+            &:hover:after{
+                width: 100%;
+            }
+            &:after{
+                content: " ";
+                position: absolute;
+                display: block;
+                height: 2px;
+                width: 0%;
+                //background-color: white;
+                background-color: $red;
+                bottom: -5px;
+                transition: .5s all ease-in-out;
+            }
+        }
+    }
+    .mobile-icon{
+        position: absolute;
+        right: 3rem; 
+        top: 1rem;
+        font-size: 3rem;
+        display: none;
+    }
+    li{
+        cursor: pointer;           
+    }
+}

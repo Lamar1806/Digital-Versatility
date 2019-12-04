@@ -1,0 +1,26 @@
+{
+  "name": "resources",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bourbon-neat": "^1.9.0"
+  },
+  "devDependencies": {
+    "bourbon": "^5.0.0",
+    "bourbon-neat": "^1.9.0",
+    "foundation-sites": "^6.4.4-rc1",
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^3.0.0",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.12.0"
+  },
+  "scripts": {
+    "compile-foundation": "node-sass ../vendors/foundation-sites/scss/app.scss css/foundation.css",
+    "compile-neat": "node-sass ../vendors/bourbon-neat/app/assets/stylesheets/neat.scss css/neat.css",
+    "compile-sass": "node-sass sass/app.scss css/app.css",
+    "compile-sass-w": "node-sass sass/app.scss css/app.css -w"
+  },
+  "author": "",
+  "license": "ISC"
+}

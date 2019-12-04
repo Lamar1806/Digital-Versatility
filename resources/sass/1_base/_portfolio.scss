@@ -1,0 +1,32 @@
+.portfolio{
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+    .row{
+        margin-top: 5rem;
+    }
+    &-description{
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 2rem;
+        color: $orange;
+    }
+
+    &-img{
+        @include grid-column(12,$portfolio-grid);
+        height: 25rem;
+        opacity: .7;
+        transform: scale(1.003);
+        //transition: opacity .5s ease;
+        .tint &:hover{
+            opacity: 1;
+            transform: none;
+            // cursor: pointer;
+        }
+    }
+    .tint{
+        //@include grid-container;
+        @include grid-column(4,$portfolio-grid);
+        background: black;
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,25 @@
+//Text Colors
+$main-text: #555;
+$white: #fff;
+$darkened-white: #f0f0f0;
+$black: #000;
+$red: #f4233e;
+$original-logo: #454545;
+$orange: #e67e22;
+$linkedin: #007bb5;
+$facebook: #3b5998;
+$youtube: #ff0000;
+
+//services grid
+$service-card-grid: (
+    columns: 12,
+    gutter: 20px,
+    media: 1200,
+    direction: ltr,
+);
+//portfolio grid
+$portfolio-grid: (
+    columns: 12,
+    gutter: 0rem,
+    media: 1200
+);

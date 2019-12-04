@@ -1,0 +1,53 @@
+.footer{
+    padding: 1rem 0;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    &-nav{
+        position: relative;
+        font-size: 1.8rem;        
+        color: #fff;       
+        ul, li{
+            display: inline-block;
+        }
+        .footer-logo-container{        
+            .logo{    
+                width: 5rem;
+                height: 5rem;
+            }
+        }
+    }
+    &-links{
+        position: absolute;
+        right: 3rem; 
+        text-transform: uppercase;
+        top: 50%;
+        transform: translateY(-50%);
+        & li:not(:last-child){
+            margin-right: 1.5rem;
+        }
+        .footer-link{
+            position: relative;
+            letter-spacing: 1.5px;
+            color: white;
+            font-size: 3rem; 
+            transition: all .25s ease-in-out;          
+        }
+        [class*="linkedin"]:hover{
+            color: $linkedin;
+        }
+        [class*="facebook"]:hover{
+            color: $facebook;
+        }
+        [class*="youtube"]:hover{
+            color: $youtube;
+        }
+    }
+    &-message{
+        position: relative;
+        top: -1rem;
+        font-size: 1.5rem;
+        text-align: center;
+        letter-spacing: 1.2px;
+        line-height: 2rem;
+    }
+}

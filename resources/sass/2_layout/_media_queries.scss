@@ -1,0 +1,177 @@
+@media only screen and (max-width: 1024px){
+    .proposal{
+        padding-right: 3rem;
+    }    
+}
+@media only screen and (max-width: 962px){
+    .proposal{
+        padding-right: 0rem;
+    }
+    .proposal-desc{
+        @include grid-shift(0);
+        @include grid-column(6);
+        
+        font-size: 1.6rem;
+        .line{
+
+        }
+        .icon{
+            margin-right: 1rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 840px){
+    .header-h2{
+        font-size: 3rem;
+    }
+    .footer{
+        .logo{
+            position: relative;
+            left: 2.5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {    
+    .nav{
+       padding: 0;
+    }
+    .service{
+        &-card{
+            @include grid-column(12);
+        }
+    }
+    .form{
+        @include grid-column(12);
+        @include grid-shift(1.5);
+        
+        margin-top: 30rem;
+    }
+    .form-group{
+        
+        .text-1{
+            width: 75%;
+            //display: block;
+        }
+        .text-2{
+            width: 75%;
+            margin: 0;
+            margin-top: 1.5rem;
+        }
+    }
+    
+    .proposal-desc{
+        @include grid-column(12);
+        @include grid-shift(2.5);
+        //margin-top: 3rem;
+        position: absolute;
+        top: 0;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .nav{
+        .logo{
+            position: relative;
+            left: 2.5rem;
+            top: 2.5px;
+        }
+        ul li{
+            display: block;                            
+        }
+        .logo{
+            position: absolute;
+            top: 0rem;
+        }
+       .links{
+           position: relative;
+           text-align: center;
+           display: none;
+           width: 15rem;
+           margin: 0 auto;
+           margin-top: 2rem;
+           left: 50%;
+           transform: translateX(-50%);
+           padding-bottom: 2rem;
+           li{
+               margin-top: .5rem;
+               &:after{
+                   display: none;
+               }
+           }
+       }
+       .mobile-icon{
+           display: inline-block;
+       }              
+    }
+    .nav-sticky{
+        height: 6rem;
+    }
+    .footer{
+        .logo{
+            position: relative;
+            left: 2.5rem;
+        }
+        p{
+            margin-top: 2rem;
+        }
+    }
+}
+@media only screen and (max-width: 650px){    
+    h1, .header-h1{
+        font-size: 4rem;
+    }
+    .header-h2{
+        font-size: 2rem;
+    }
+    .header-btn{
+        font-size: 1.8rem;
+    }
+    .about{
+        &-text-container{
+            @include grid-column(12);
+        }
+        &-image-container{
+            @include grid-column(12);
+            margin-top: 3rem;
+        }
+    }
+    .portfolio{
+        .tint{
+            @include grid-column(12);
+            margin-top: 1rem;
+        }
+        &-img{
+            //@include grid-column(12);
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 580px){
+    h1, .header-h1{
+        font-size: 3rem;
+    }
+    .header-h2{
+        font-size: 1.8rem;
+    }
+    .header-btn{
+        font-size: 1.6rem;
+    }
+    .proposal-desc{
+        @include grid-column(12);
+        @include grid-shift(0);
+        position: absolute;
+        top: 0;
+    }
+}
+
+@media only screen and (max-width: 393px){
+    .proposal-desc{
+        .icon{
+            margin-right: 0;
+        }
+        font-size: 1.4rem;
+    }
+}
